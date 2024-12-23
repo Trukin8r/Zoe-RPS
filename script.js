@@ -34,11 +34,10 @@ function playRound(humanChoice, computerChoice) {
   playRound(humanSelection, computerSelection);
 
   function playGame(playRound) {
-    playRound()
-    playRound()
-    playRound()
-    playRound()
-    playRound()
+    let i = 1
+    while(i < 6)
+        playRound()
+    i++
   }
 
 console.log(getComputerChoice())
