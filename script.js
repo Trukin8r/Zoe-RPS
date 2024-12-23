@@ -32,7 +32,14 @@ function playRound(humanChoice, computerChoice) {
   const computerSelection = getComputerChoice();
   
   playRound(humanSelection, computerSelection);
-  
+
+  function playGame(playRound) {
+    playRound()
+    playRound()
+    playRound()
+    playRound()
+    playRound()
+  }
 
 console.log(getComputerChoice())
 
