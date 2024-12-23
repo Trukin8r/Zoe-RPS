@@ -15,4 +15,10 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice)
+console.log(getComputerChoice())
+
+console.log(getHumanChoice())
+
+function getHumanChoice() {
+    
+}
