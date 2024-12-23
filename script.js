@@ -15,10 +15,12 @@ function getComputerChoice() {
     }
 }
 
+function getHumanChoice() {
+   let hh = prompt("input rock, paper, or scissors")
+   let nn = hh.toLowerCase()
+   return nn
+}
+
 console.log(getComputerChoice())
 
 console.log(getHumanChoice())
-
-function getHumanChoice() {
-    
-}
