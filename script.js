@@ -1,3 +1,6 @@
+const humanScore = (0)
+const computerScore = (0)
+
 function getComputerChoice() {
     let ff = Math.floor(Math.random() * 3);
     switch(ff) {
@@ -20,6 +23,16 @@ function getHumanChoice() {
    let nn = hh.toLowerCase()
    return nn
 }
+
+function playRound(humanChoice, computerChoice) {
+    // your code here!
+  }
+  
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+  
+  playRound(humanSelection, computerSelection);
+  
 
 console.log(getComputerChoice())
 
