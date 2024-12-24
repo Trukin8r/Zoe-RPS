@@ -2,7 +2,7 @@ let humanScore = 0
 let computerScore = 0
 
 function getComputerChoice() {
-    let ff = Math.floor(Math.random() * 3);
+    let ff = Math.floor(Math.random() * 4);
     switch(ff) {
         case 0:
             return "rock"
@@ -12,6 +12,9 @@ function getComputerChoice() {
             break;
         case 2:
             return "scissors"
+            break;
+        case 3:
+            return "grenade"
             break;
         default: 
             return "error pls click the button again"
@@ -60,6 +63,17 @@ function playRound() {
                 computerScore++
                 console.log("you lose! paper beats " + humanChoice)
             }break;
+        case "grenade": 
+            if(humanChoice === "rock") {
+                computerScore++
+                console.log("boom! grenade beats rock")
+            } else if(humanChoice === "paper") {
+                computerScore++
+                console.log("boom! grenade beats paper")
+            } else {
+                computerScore++
+                console.log("boom! grenade beats " + humanChoice)
+            }
         }
     }
 
