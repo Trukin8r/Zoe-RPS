@@ -57,12 +57,13 @@ function playRound(humanChoice, computerChoice) {
                 console.log("winner!")
             } else if(humanChoice === "paper") {
                 console.log("tie!")
-            } else 
+            } else {
                 computerScore++
                 console.log("you lose!")
-            break;
-  }
-  
+            }break;
+    }
+}
+
   const humanSelection = getHumanChoice();
   const computerSelection = getComputerChoice();
   
