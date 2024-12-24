@@ -38,8 +38,8 @@ function playRound(humanChoice, computerChoice) {
             } else 
                 computerScore++
                 console.log("you lose!")
-            }
-                    }break;
+            
+                    break;
         case "paper":
             if(humanChoice === "scissors") {
                 humanScore++
@@ -49,8 +49,8 @@ function playRound(humanChoice, computerChoice) {
             } else 
                 computerScore++
                 console.log("you lose!")
-            }
-                    }break;
+            
+                    break;
         case "paper":
              if(humanChoice === "rock") {
                 humanScore++
@@ -60,7 +60,7 @@ function playRound(humanChoice, computerChoice) {
             } else 
                 computerScore++
                 console.log("you lose!")
-            }break;
+            break;
   }
   
   const humanSelection = getHumanChoice();
