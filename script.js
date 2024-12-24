@@ -1,5 +1,5 @@
-const humanScore = (0)
-const computerScore = (0)
+const humanScore = 0
+const computerScore = 0
 
 function getComputerChoice() {
     let ff = Math.floor(Math.random() * 3);
@@ -27,7 +27,6 @@ function getHumanChoice() {
 function playRound() {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
-    playRound (humanSelection, computerSelection)
     switch(computerChoice) {
         case "rock":
             if(humanChoice === "paper") {
@@ -74,7 +73,7 @@ function playRound() {
     i++
     }
   }
-
+playRound()
 //console.log(getComputerChoice())
 
 //console.log(getHumanChoice())
