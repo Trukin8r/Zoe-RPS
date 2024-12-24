@@ -28,8 +28,8 @@ function playRound(humanChoice, computerChoice) {
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     playRound (humanSelection, computerSelection)
-    switch(computerChoice)
-        {case "rock":
+    switch(computerChoice) {
+        case "rock":
             if(humanChoice === "paper") {
                 humanScore++
                 console.log("winner!")
@@ -61,18 +61,18 @@ function playRound(humanChoice, computerChoice) {
                 computerScore++
                 console.log("you lose!")
             }break;
+        }
     }
-}
-
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
   
   playRound(humanSelection, computerSelection);
 
   function playGame() {
     let i = 1
     while(i < 6) {
+        console.log("round: " + i)
         playRound()
+        console.log("score: h: " + humanScore + "c: " + computerScore)
+        console.log(" ")
     i++
     }
   }
