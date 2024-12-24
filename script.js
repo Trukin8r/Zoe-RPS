@@ -32,34 +32,34 @@ function playRound(humanChoice, computerChoice) {
         case "rock":
             if(humanChoice === "paper") {
                 humanScore++
-                console.log("winner!")
+                console.log("winner! paper beats rock")
             } else if(humanChoice === "rock") {
-                console.log("tie!")
-            } else 
-                computerScore++
-                console.log("you lose!")
-            
-                    break;
-        case "paper":
-            if(humanChoice === "scissors") {
-                humanScore++
-                console.log("winner!")
-            } else if(humanChoice === "paper") {
-                console.log("tie!")
-            } else 
-                computerScore++
-                console.log("you lose!")
-            
-                    break;
-        case "paper":
-             if(humanChoice === "rock") {
-                humanScore++
-                console.log("winner!")
-            } else if(humanChoice === "paper") {
-                console.log("tie!")
+                console.log("tie! rock and rock tie")
             } else {
                 computerScore++
-                console.log("you lose!")
+                console.log("you lose! rock beats " + humanChoice)
+            
+                }    break;
+        case "scissors":
+            if(humanChoice === "rock") {
+                humanScore++
+                console.log("winner! rock beats scissors")
+            } else if(humanChoice === "scissors") {
+                console.log("tie! scissors and scissors tie")
+            } else {
+                computerScore++
+                console.log("you lose! scissors beats " + humanChoice)
+            
+              }  break;
+        case "paper":
+             if(humanChoice === "scissors") {
+                humanScore++
+                console.log("winner! scissors beats paper")
+            } else if(humanChoice === "paper") {
+                console.log("tie! paper and paper tie")
+            } else {
+                computerScore++
+                console.log("you lose! paper beats " + humanChoice)
             }break;
         }
     }
