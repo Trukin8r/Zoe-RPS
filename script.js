@@ -1,5 +1,5 @@
-const humanScore = 0
-const computerScore = 0
+let humanScore = 0
+let computerScore = 0
 
 function getComputerChoice() {
     let ff = Math.floor(Math.random() * 3);
@@ -73,7 +73,7 @@ function playRound() {
     i++
     }
   }
-playRound()
+playGame()
 //console.log(getComputerChoice())
 
 //console.log(getHumanChoice())
