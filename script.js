@@ -24,9 +24,9 @@ function getHumanChoice() {
    return nn
 }
 
-function playRound(humanChoice, computerChoice) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+function playRound() {
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
     playRound (humanSelection, computerSelection)
     switch(computerChoice) {
         case "rock":
@@ -63,15 +63,13 @@ function playRound(humanChoice, computerChoice) {
             }break;
         }
     }
-  
-  playRound(humanSelection, computerSelection);
 
   function playGame() {
     let i = 1
     while(i < 6) {
         console.log("round: " + i)
         playRound()
-        console.log("score: h: " + humanScore + "c: " + computerScore)
+        console.log("score: h: " + humanScore + " / c: " + computerScore)
         console.log(" ")
     i++
     }
